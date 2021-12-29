@@ -6,12 +6,22 @@ import img3 from "./img/james-wainscoat-0DCnT37wevk-unsplash.png";
 import img4 from "./img/pawel-czerwinski-BPrk2cOoCq8-unsplash.png";
 import img5 from "./img/robert-stemler-VtMdZFGCWuI-unsplash.png";
 
+import img7 from "./img/denny-muller-qoCrTHUu6-E-unsplash.jpg";
+import img8 from "./img/david-clode-3udd_NEmgDs-unsplash.png";
 
-let picArray = [img1
+import img10 from "./img/yani-vandenbranden-FLaOOXl2tZ8-unsplash.jpg";
+
+let picArray = [
+    img1
   , img2
   , img4
   , img5
   , img3
+  
+  , img7
+  , img8
+  
+  , img10
 ]
 let len = picArray.length
 
@@ -235,6 +245,8 @@ class App extends React.Component {
     let randomImage = this.state.randomImage
     let currentQuote = quotes[random].quote
     let currentAuthor = quotes[random].author
+    console.log("n quotes:")
+    console.log(quotes.length)
     return (
 
 

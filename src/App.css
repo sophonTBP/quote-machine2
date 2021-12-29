@@ -2,14 +2,15 @@
 
 
 .App {
+  padding-top: 2vh;
  text-align : center; 
  display: grid;  
  position: relative;
-height: 100vh;
+height: 98vh;
 z-index: 7;
   
   color: white;
-  font-size: clamp(1.5rem,4.5vh,5rem);
+  font-size: clamp(1.5rem,3.5vh,5rem);
 
   
 
@@ -17,13 +18,13 @@ z-index: 7;
 
 
 .App::before{content: '';
-  
+  padding-top: 2vh;
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  height: 100vh;
+  height: 98vh;
   z-index: -2;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 1.75), rgba(0, 0, 0, 0.25));
   
@@ -38,25 +39,27 @@ flex-direction: column;
 }
 .button{
   font-size: 1em;
-  height:2.2rem ;
+  height:2.5rem ;
  
   min-width: 15rem;
   padding: 0 1rem;
   padding-top: 0.2rem;
   
-  background-color: rgb(18, 20, 34);
+  background-color: rgb(69, 69, 70);
+  background: linear-gradient(to left, rgba(0, 0, 0, 1.75), rgba(0, 0, 0, 0.25));
   color: aliceblue;
   margin:1.2rem auto ;
   
   
   
   border-radius: 10px;  
-  box-shadow: 10px 5px 5px rgb(190, 190, 190);
+  box-shadow: 15px 8px 8px rgba(190, 190, 190, 0.281);
   border: 3px solid rgb(139, 139, 139);
 }
 .button:hover{
   background-color: rgb(170, 170, 172);
-  color: black;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.25));
+  color: rgb(194, 191, 191);
 }
 .button:active{
   border: none;
@@ -71,4 +74,7 @@ z-index: 7;
 }
 
 
-
+#author{
+  font-weight: 600;
+  font-size: clamp(1.8rem,4.8vh,6rem);
+}
